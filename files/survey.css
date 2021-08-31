@@ -1,7 +1,7 @@
 body{
     font-size: 1rem;
     font-weight: 200;
-    border: hotpink;
+    border: darkblue;
     border-radius: 5px;
     max-width: 60%;
     margin:0 auto;
@@ -15,11 +15,38 @@ h1,p,h3{
     text-align: center;
 }
 form{
-    background-color: rgba(0, 0, 139, 0.623);
+    background-color: rgba(0, 0, 139, 0.479);
     padding: 2.5rem 0.6rem;
     border-radius: 0.25rem;
+    color: white;
+    box-shadow: 5px 10px 8px rgb(0, 0, 139);
 }
 #form-group1 label{
     display: block;
     border-radius: 5px;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    color: white;
+} 
+input{
+    padding: 0.35rem 0.75rem;
+    text-transform: capitalize;
+    padding-right:60% ;
+    margin-left: 7px;
+    margin-bottom: 5px;
+}
+.submit-button{
+    display: block;
+}
+.input-textarea{
+width: 100%;
+resize: vertical;
+min-height: 120px;
+}
+.submit:hover{
+    color: black (0, 0, 139, 0.52);
+    background-color: darkblue;
+    text-transform: uppercase;
+    font-size: 20px;
+    
 }
