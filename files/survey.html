@@ -4,29 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
     <title>Survey |My Survey Form</title>
 </head>
 <body>
-    <h1 id="title" Survey Form></h1>
-    <h2>Survey Form</h2>
-    <p id="description"> 
-     Personal informations required concerning your survey form
-
+   <header>
+         <h1 id="title"> Survey Form</h1>
+      <p id="description"> 
+           Personal informations required concerning your registration form
+     </p>
+  </header>
+    
     <form id="survey-form">
-        <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="enter your name">
-        </fieldset>
+        <div id="form-group1">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" placeholder="enter your name" required>
+        </div>
+           
+     <div id="form-group1"> 
+         <label id="email-label" for="email">Email</label>
+         <input type="email" name="email" id="email" placeholder="enter your email" required>
+     </div>
+    
+     <div id="form-group1">
+            <label id="number-label" for="number">Serial Number</label>
+            <input type="number" min="40" max="99" name="phone" id="number" placeholder="enter your serial number">
+     </div>
 
-        <fieldset>
-            <label for="Email">Email</label>
-            <input type="email" name="Email" id="email" placeholder="enter your email">
-        </fieldset>
-        <fieldset>
-            <label for="number">Phone</label>
-            <input type="text" name="phone" id="number" placeholder="enter your number">
-        </fieldset>
-    </p>
+
+     <div class="form-group">
+         <p>Which Option Best Describe Your current role</p>
+         <select name="role" id="dropdown" class="form-control">
+             <option disabled selected value>select current role</option>
+             <option value="student">student</option>
+             <option value="full time learner">full time learner</option>
+             <option value="full time job">full time job</option>
+             <option value="prefer not to sleep">prefer not to sleep</option>
+             <option value="retired">retired</option>
+         </select>
+
+     </div>
+     <div class="form-group">
+        <h3>Gender</h3>
+         <input type="radio" name="gender" id="male" value="male">
+         <label for="male">male</label><br>
+            
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+
+     </div>
+     <div class="form-group">
+        <h3>Subject offered</h3>
+
+        
+         <input type="checkbox" name="subject" id="english" value="english"> 
+         <label for="english">english</label><br>
+
+         <input type="checkbox" name="subject" id="maths" value="maths">
+         <label for="maths">maths</label><br>
+
+         <input type="checkbox" name="subject" id="computer" value="computer">
+         <label for="computer">computer</label><br>
+
+         <input type="checkbox" name="subject" id="civic" value="civic">
+         <label for="civic">civic</label><br>
+
+         <input type="checkbox" name="subject" id="literature" value="literature">
+         <label for="literature">literature</label><br>
+
+         <input type="checkbox" name="subject" id="biology" value="biology">
+         <label for="biology">biology</label><br>
+
+         <input type="checkbox" name="subject" id="history"  value="history">
+         <label for="history">history</label><br>
+
+         <input type="checkbox" name="subject" id="chemistry" value="chemistry">
+         <label for="chemistry">chemistry</label><br>
+
+         <input type="checkbox" name="subject" id="geography" value="geography">
+         <label for="geography">geography</label><br>
+
+         <input type="checkbox" name="subject" id="physics" value="physics">
+         <label for="physics">physics</label><br>
+
+         <input type="checkbox" name="subject" id="government" value="government">
+         <label for="government">government</label><br>
+
+         <input type="checkbox" name="subject" id="account" value="account">
+         <label for="account">account</label><br>
+     </div>
+
+     <div class="form-group">
+        <p>Any comments or suggestions</p>
+        <textarea name="comments" class="input-textarea" name="comment" placeholder="Place your comments here"></textarea>
+     </div>
+
+     <div class="form-group">
+      <button type="submit" id=submit class="submit-button">
+          Submit
+      </button>
+     </div>
+    
+    
     </form>
 
 </body>
