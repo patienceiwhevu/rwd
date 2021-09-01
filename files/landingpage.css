@@ -1,0 +1,40 @@
+@media (max-width: 1400px) {
+    
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    nav{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 12em;
+    margin-top: 3em;
+}
+#header-img{
+    max-width: 10%;
+}
+figcaption{
+    text-transform: capitalize;   
+}
+
+#com{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr );
+}
+
+figure img{
+    width: 300px;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    text-decoration-line: underline;
+}
+}

@@ -42,6 +42,16 @@
              <option value="prefer not to sleep">prefer not to sleep</option>
              <option value="retired">retired</option>
          </select>
+         <div>
+             <p>Would u recommend survey plan to a friend</p>
+             <select name="recommendation" id="dropdown" class="form-control">
+             <option disabled selected value> choose</option>
+             <option value="yes">yes </option >
+             <option value="No">No</option>
+             <option value="Probably">Probably</option>
+
+             </select>
+         </div>
 
      </div>
      <div class="form-group">
@@ -49,7 +59,7 @@
          <input type="radio" name="gender" id="male" value="male">
          <label for="male">male</label><br>
             
-            <input type="radio" name="gender" id="female" value="female">
+            <input type="radio" name="gender" id="female" value="female" required>
             <label for="female">female</label>
 
      </div>
@@ -57,10 +67,10 @@
         <h3>Subject offered</h3>
 
         
-         <input type="checkbox" name="subject" id="english" value="english"> 
+         <input type="checkbox" name="subject" id="english" value="english" > 
          <label for="english">english</label><br>
 
-         <input type="checkbox" name="subject" id="maths" value="maths">
+         <input type="checkbox" name="subject" id="maths" value="maths" >
          <label for="maths">maths</label><br>
 
          <input type="checkbox" name="subject" id="computer" value="computer">
